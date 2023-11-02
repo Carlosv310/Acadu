@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "636172792487",
+    "project_id": "acadutest",
+    "storage_bucket": "acadutest.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:636172792487:android:ba6f4d4243d8590bfc6182",
+        "android_client_info": {
+          "package_name": "com.mycompany.acaduv2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJetY2wuFejNuduTghnIf7oNm16vCZ13Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
