@@ -51,6 +51,16 @@ class UsersRecord extends FirestoreRecord {
   int get gradelevel => _gradelevel ?? 0;
   bool hasGradelevel() => _gradelevel != null;
 
+  // "mathpoints" field.
+  int? _mathpoints;
+  int get mathpoints => _mathpoints ?? 0;
+  bool hasMathpoints() => _mathpoints != null;
+
+  // "englishpoints" field.
+  int? _englishpoints;
+  int get englishpoints => _englishpoints ?? 0;
+  bool hasEnglishpoints() => _englishpoints != null;
+
   void _initializeFields() {
     _email = snapshotData['email'] as String?;
     _displayName = snapshotData['display_name'] as String?;
@@ -59,6 +69,8 @@ class UsersRecord extends FirestoreRecord {
     _createdTime = snapshotData['created_time'] as DateTime?;
     _phoneNumber = snapshotData['phone_number'] as String?;
     _gradelevel = castToType<int>(snapshotData['gradelevel']);
+    _mathpoints = castToType<int>(snapshotData['mathpoints']);
+    _englishpoints = castToType<int>(snapshotData['englishpoints']);
   }
 
   static CollectionReference get collection =>
@@ -102,6 +114,8 @@ Map<String, dynamic> createUsersRecordData({
   DateTime? createdTime,
   String? phoneNumber,
   int? gradelevel,
+  int? mathpoints,
+  int? englishpoints,
 }) {
   final firestoreData = mapToFirestore(
     <String, dynamic>{
@@ -112,6 +126,8 @@ Map<String, dynamic> createUsersRecordData({
       'created_time': createdTime,
       'phone_number': phoneNumber,
       'gradelevel': gradelevel,
+      'mathpoints': mathpoints,
+      'englishpoints': englishpoints,
     }.withoutNulls,
   );
 
@@ -129,7 +145,9 @@ class UsersRecordDocumentEquality implements Equality<UsersRecord> {
         e1?.uid == e2?.uid &&
         e1?.createdTime == e2?.createdTime &&
         e1?.phoneNumber == e2?.phoneNumber &&
-        e1?.gradelevel == e2?.gradelevel;
+        e1?.gradelevel == e2?.gradelevel &&
+        e1?.mathpoints == e2?.mathpoints &&
+        e1?.englishpoints == e2?.englishpoints;
   }
 
   @override
@@ -140,7 +158,9 @@ class UsersRecordDocumentEquality implements Equality<UsersRecord> {
         e?.uid,
         e?.createdTime,
         e?.phoneNumber,
-        e?.gradelevel
+        e?.gradelevel,
+        e?.mathpoints,
+        e?.englishpoints
       ]);
 
   @override

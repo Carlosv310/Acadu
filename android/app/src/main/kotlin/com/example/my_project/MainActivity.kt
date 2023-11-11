@@ -1,4 +1,4 @@
-package com.mycompany.acaduv2
+package com.acadu.acadudeploy
 
 import io.flutter.embedding.android.FlutterActivity
 

@@ -255,7 +255,7 @@ class _WrongpageMWidgetState extends State<WrongpageMWidget>
                             EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 0.0, 16.0),
                         child: FFButtonWidget(
                           onPressed: () async {
-                            context.pushNamed('homepagefinal');
+                            context.safePop();
                           },
                           text: 'Try Again',
                           options: FFButtonOptions(

@@ -126,7 +126,7 @@ class _OpeningpageWidgetState extends State<OpeningpageWidget>
             Align(
               alignment: AlignmentDirectional(0.00, 0.00),
               child: Text(
-                'And welcome to your path...',
+                '',
                 style: FlutterFlowTheme.of(context).bodyMedium.override(
                       fontFamily: 'Readex Pro',
                       color: FlutterFlowTheme.of(context).customColor4,

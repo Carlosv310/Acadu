@@ -5,12 +5,13 @@ Future initFirebase() async {
   if (kIsWeb) {
     await Firebase.initializeApp(
         options: FirebaseOptions(
-            apiKey: "AIzaSyAe1rV2RS2raAic1zqh0uSsY5CvBrZYdsY",
-            authDomain: "acadutest.firebaseapp.com",
-            projectId: "acadutest",
-            storageBucket: "acadutest.appspot.com",
-            messagingSenderId: "636172792487",
-            appId: "1:636172792487:web:fcb9a59e23a88e4efc6182"));
+            apiKey: "AIzaSyCWYsARZHrJ1x7xGuOjBMGJGyWJ8v_XWQI",
+            authDomain: "acadu-ada31.firebaseapp.com",
+            projectId: "acadu-ada31",
+            storageBucket: "acadu-ada31.appspot.com",
+            messagingSenderId: "22026485479",
+            appId: "1:22026485479:web:61cbf7f11b406e33b86c42",
+            measurementId: "G-6PYCHDEYEV"));
   } else {
     await Firebase.initializeApp();
   }

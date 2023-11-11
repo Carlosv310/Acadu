@@ -107,8 +107,8 @@ class _EditprofileWidgetState extends State<EditprofileWidget> {
                           final selectedMedia =
                               await selectMediaWithSourceBottomSheet(
                             context: context,
+                            imageQuality: 70,
                             allowPhoto: true,
-                            backgroundColor: FlutterFlowTheme.of(context).white,
                           );
                           if (selectedMedia != null &&
                               selectedMedia.every((m) =>
@@ -160,24 +160,17 @@ class _EditprofileWidgetState extends State<EditprofileWidget> {
                           decoration: BoxDecoration(
                             color: FlutterFlowTheme.of(context).background,
                           ),
-                          child: Column(
-                            mainAxisSize: MainAxisSize.max,
-                            children: [
-                              AuthUserStreamWidget(
-                                builder: (context) => Container(
-                                  width: 120.0,
-                                  height: 120.0,
-                                  clipBehavior: Clip.antiAlias,
-                                  decoration: BoxDecoration(
-                                    shape: BoxShape.circle,
-                                  ),
-                                  child: Image.network(
-                                    currentUserPhoto,
-                                    fit: BoxFit.cover,
-                                  ),
-                                ),
-                              ),
-                            ],
+                          child: Container(
+                            width: 120.0,
+                            height: 120.0,
+                            clipBehavior: Clip.antiAlias,
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                            ),
+                            child: Image.network(
+                              _model.uploadedFileUrl,
+                              fit: BoxFit.cover,
+                            ),
                           ),
                         ),
                       ),
@@ -552,9 +545,9 @@ class _EditprofileWidgetState extends State<EditprofileWidget> {
                                         displayName:
                                             _model.newnameController.text,
                                         email: _model.newemailController.text,
-                                        photoUrl: _model.uploadedFileUrl,
                                         gradelevel: int.tryParse(
                                             _model.gradeupdateController.text),
+                                        photoUrl: _model.uploadedFileUrl,
                                       ));
 
                                       context.pushNamed('Avatarpage');

@@ -208,34 +208,34 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => EnglishA5Widget(),
         ),
         FFRoute(
-          name: 'WrongpageW',
-          path: '/wrongpageW',
-          builder: (context, params) => WrongpageWWidget(),
+          name: 'WrongpageR',
+          path: '/wrongpageR',
+          builder: (context, params) => WrongpageRWidget(),
         ),
         FFRoute(
-          name: 'WritingA1',
-          path: '/writingA1',
-          builder: (context, params) => WritingA1Widget(),
+          name: 'ReadingA1',
+          path: '/readingA1',
+          builder: (context, params) => ReadingA1Widget(),
         ),
         FFRoute(
-          name: 'WritingA2',
-          path: '/writingA2',
-          builder: (context, params) => WritingA2Widget(),
+          name: 'ReadingA2',
+          path: '/readingA2',
+          builder: (context, params) => ReadingA2Widget(),
         ),
         FFRoute(
-          name: 'WritingA5',
-          path: '/writingA5',
-          builder: (context, params) => WritingA5Widget(),
+          name: 'ReadingA5',
+          path: '/readingA5',
+          builder: (context, params) => ReadingA5Widget(),
         ),
         FFRoute(
-          name: 'WritingA3',
-          path: '/writingA3',
-          builder: (context, params) => WritingA3Widget(),
+          name: 'ReadingA3',
+          path: '/readingA3',
+          builder: (context, params) => ReadingA3Widget(),
         ),
         FFRoute(
-          name: 'WritingA4',
-          path: '/writingA4',
-          builder: (context, params) => WritingA4Widget(),
+          name: 'ReadingA4',
+          path: '/readingA4',
+          builder: (context, params) => ReadingA4Widget(),
         ),
         FFRoute(
           name: 'SignInPage',
@@ -262,6 +262,241 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => ChangepasswordWidget(
             newname: params.getParam('newname', ParamType.String),
           ),
+        ),
+        FFRoute(
+          name: 'MathA6',
+          path: '/mathA6',
+          builder: (context, params) => MathA6Widget(),
+        ),
+        FFRoute(
+          name: 'MathA7',
+          path: '/mathA7',
+          builder: (context, params) => MathA7Widget(),
+        ),
+        FFRoute(
+          name: 'MathA8',
+          path: '/mathA8',
+          builder: (context, params) => MathA8Widget(),
+        ),
+        FFRoute(
+          name: 'MathA10',
+          path: '/mathA10',
+          builder: (context, params) => MathA10Widget(),
+        ),
+        FFRoute(
+          name: 'MathA9',
+          path: '/mathA9',
+          builder: (context, params) => MathA9Widget(),
+        ),
+        FFRoute(
+          name: 'MathA11',
+          path: '/mathA11',
+          builder: (context, params) => MathA11Widget(),
+        ),
+        FFRoute(
+          name: 'MathA12',
+          path: '/mathA12',
+          builder: (context, params) => MathA12Widget(),
+        ),
+        FFRoute(
+          name: 'MathA13',
+          path: '/mathA13',
+          builder: (context, params) => MathA13Widget(),
+        ),
+        FFRoute(
+          name: 'MathA14',
+          path: '/mathA14',
+          builder: (context, params) => MathA14Widget(),
+        ),
+        FFRoute(
+          name: 'MathA15',
+          path: '/mathA15',
+          builder: (context, params) => MathA15Widget(),
+        ),
+        FFRoute(
+          name: 'MathA16',
+          path: '/mathA16',
+          builder: (context, params) => MathA16Widget(),
+        ),
+        FFRoute(
+          name: 'MathA17',
+          path: '/mathA17',
+          builder: (context, params) => MathA17Widget(),
+        ),
+        FFRoute(
+          name: 'MathA18',
+          path: '/mathA18',
+          builder: (context, params) => MathA18Widget(),
+        ),
+        FFRoute(
+          name: 'MathA19',
+          path: '/mathA19',
+          builder: (context, params) => MathA19Widget(),
+        ),
+        FFRoute(
+          name: 'MathA20',
+          path: '/mathA20',
+          builder: (context, params) => MathA20Widget(),
+        ),
+        FFRoute(
+          name: 'EnglishA6',
+          path: '/englishA6',
+          builder: (context, params) => EnglishA6Widget(),
+        ),
+        FFRoute(
+          name: 'EnglishA7',
+          path: '/englishA7',
+          builder: (context, params) => EnglishA7Widget(),
+        ),
+        FFRoute(
+          name: 'EnglishA11',
+          path: '/englishA11',
+          builder: (context, params) => EnglishA11Widget(),
+        ),
+        FFRoute(
+          name: 'EnglishA10',
+          path: '/englishA10',
+          builder: (context, params) => EnglishA10Widget(),
+        ),
+        FFRoute(
+          name: 'EnglishA9',
+          path: '/englishA9',
+          builder: (context, params) => EnglishA9Widget(),
+        ),
+        FFRoute(
+          name: 'EnglishA8',
+          path: '/englishA8',
+          builder: (context, params) => EnglishA8Widget(),
+        ),
+        FFRoute(
+          name: 'EnglishA12',
+          path: '/englishA12',
+          builder: (context, params) => EnglishA12Widget(),
+        ),
+        FFRoute(
+          name: 'EnglishA13',
+          path: '/englishA13',
+          builder: (context, params) => EnglishA13Widget(),
+        ),
+        FFRoute(
+          name: 'EnglishA14',
+          path: '/englishA14',
+          builder: (context, params) => EnglishA14Widget(),
+        ),
+        FFRoute(
+          name: 'EnglishA15',
+          path: '/englishA15',
+          builder: (context, params) => EnglishA15Widget(),
+        ),
+        FFRoute(
+          name: 'WrongpageE',
+          path: '/wrongpageE',
+          builder: (context, params) => WrongpageEWidget(),
+        ),
+        FFRoute(
+          name: 'EnglishA16',
+          path: '/englishA16',
+          builder: (context, params) => EnglishA16Widget(),
+        ),
+        FFRoute(
+          name: 'EnglishA17',
+          path: '/englishA17',
+          builder: (context, params) => EnglishA17Widget(),
+        ),
+        FFRoute(
+          name: 'EnglishA18',
+          path: '/englishA18',
+          builder: (context, params) => EnglishA18Widget(),
+        ),
+        FFRoute(
+          name: 'EnglishA19',
+          path: '/englishA19',
+          builder: (context, params) => EnglishA19Widget(),
+        ),
+        FFRoute(
+          name: 'EnglishA20',
+          path: '/englishA20',
+          builder: (context, params) => EnglishA20Widget(),
+        ),
+        FFRoute(
+          name: 'ReadingA7',
+          path: '/readingA7',
+          builder: (context, params) => ReadingA7Widget(),
+        ),
+        FFRoute(
+          name: 'ReadingA10',
+          path: '/readingA10',
+          builder: (context, params) => ReadingA10Widget(),
+        ),
+        FFRoute(
+          name: 'ReadingA9',
+          path: '/readingA9',
+          builder: (context, params) => ReadingA9Widget(),
+        ),
+        FFRoute(
+          name: 'ReadingA8',
+          path: '/readingA8',
+          builder: (context, params) => ReadingA8Widget(),
+        ),
+        FFRoute(
+          name: 'ReadingA6',
+          path: '/readingA6',
+          builder: (context, params) => ReadingA6Widget(),
+        ),
+        FFRoute(
+          name: 'ReadingA11',
+          path: '/readingA11',
+          builder: (context, params) => ReadingA11Widget(),
+        ),
+        FFRoute(
+          name: 'ReadingA12',
+          path: '/readingA12',
+          builder: (context, params) => ReadingA12Widget(),
+        ),
+        FFRoute(
+          name: 'ReadingA13',
+          path: '/readingA13',
+          builder: (context, params) => ReadingA13Widget(),
+        ),
+        FFRoute(
+          name: 'ReadingA14',
+          path: '/readingA14',
+          builder: (context, params) => ReadingA14Widget(),
+        ),
+        FFRoute(
+          name: 'ReadingA15',
+          path: '/readingA15',
+          builder: (context, params) => ReadingA15Widget(),
+        ),
+        FFRoute(
+          name: 'ReadingA16',
+          path: '/readingA16',
+          builder: (context, params) => ReadingA16Widget(),
+        ),
+        FFRoute(
+          name: 'ReadingA17',
+          path: '/readingA17',
+          builder: (context, params) => ReadingA17Widget(),
+        ),
+        FFRoute(
+          name: 'ReadingA18',
+          path: '/readingA18',
+          builder: (context, params) => ReadingA18Widget(),
+        ),
+        FFRoute(
+          name: 'ReadingA19',
+          path: '/readingA19',
+          builder: (context, params) => ReadingA19Widget(),
+        ),
+        FFRoute(
+          name: 'ReadingA20',
+          path: '/readingA20',
+          builder: (context, params) => ReadingA20Widget(),
+        ),
+        FFRoute(
+          name: 'ReadingA21',
+          path: '/readingA21',
+          builder: (context, params) => ReadingA21Widget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
@@ -441,15 +676,11 @@ class FFRoute {
                 )
               : builder(context, ffParams);
           final child = appStateNotifier.loading
-              ? Center(
-                  child: SizedBox(
-                    width: 50.0,
-                    height: 50.0,
-                    child: CircularProgressIndicator(
-                      valueColor: AlwaysStoppedAnimation<Color>(
-                        Color(0xFFE6585A),
-                      ),
-                    ),
+              ? Container(
+                  color: Colors.transparent,
+                  child: Image.asset(
+                    'assets/images/IMG_4840.jpeg',
+                    fit: BoxFit.fill,
                   ),
                 )
               : page;

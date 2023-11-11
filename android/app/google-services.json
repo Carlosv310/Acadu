@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "636172792487",
-    "project_id": "acadutest",
-    "storage_bucket": "acadutest.appspot.com"
+    "project_number": "22026485479",
+    "project_id": "acadu-ada31",
+    "storage_bucket": "acadu-ada31.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:636172792487:android:ba6f4d4243d8590bfc6182",
+        "mobilesdk_app_id": "1:22026485479:android:d62576cc9a96bbdeb86c42",
         "android_client_info": {
-          "package_name": "com.mycompany.acaduv2"
+          "package_name": "com.acadu.acadudeploy"
         }
       },
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyDJetY2wuFejNuduTghnIf7oNm16vCZ13Y"
+          "current_key": "AIzaSyCIpkPnNRwinApfJIArUvYUIo1P_SdqVO8"
         }
       ],
       "services": {
